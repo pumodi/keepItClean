@@ -18,7 +18,15 @@
     IBOutlet NSButton *thursday;
     IBOutlet NSButton *friday;
     IBOutlet NSButton * saturday;
+    IBOutlet NSButton *btnEnterPassword;
+    IBOutlet NSButton *btnSavePassword;
+    IBOutlet NSButton *btnLock;
     IBOutlet NSDatePicker *datePickerTime;
+    IBOutlet NSPanel *panelPassword;
+    IBOutlet NSPanel *panelFirstPassword;
+    IBOutlet NSTextField *txtSecurePass;
+    IBOutlet NSTextField *txtFirstSecurePass;
+    IBOutlet NSMenuItem *changePassword;
 }
 
 @property (assign) IBOutlet NSWindow *window;
@@ -33,7 +41,13 @@
 @property (nonatomic) BOOL prefFri;
 @property (nonatomic) BOOL prefSat;
 @property (nonatomic) BOOL prefSun;
+@property (nonatomic) BOOL prefNotFirstRun;
+@property (nonatomic) NSString *prefPassword;
 @property (nonatomic) NSAlert *areYouSure;
+@property (nonatomic) NSAlert *notSaved;
+@property (nonatomic) NSAlert *firstPass;
+@property (nonatomic) NSAlert *noPass;
+@property (nonatomic) int tries;
 
 
 @end

@@ -18,7 +18,7 @@
 		35598277189C99CC001A8E46 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35598256189C99CC001A8E46 /* Cocoa.framework */; };
 		3559827F189C99CC001A8E46 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3559827D189C99CC001A8E46 /* InfoPlist.strings */; };
 		35598281189C99CC001A8E46 /* keepItCleanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35598280189C99CC001A8E46 /* keepItCleanTests.m */; };
-		41FFCD45189E136000293019 /* icon_512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = 41FFCD44189E136000293019 /* icon_512x512.png */; };
+		84C2CD0318A0267D00CAE98F /* icon_512x512@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C2CD0218A0267D00CAE98F /* icon_512x512@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,7 @@
 		3559827C189C99CC001A8E46 /* keepItCleanTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "keepItCleanTests-Info.plist"; sourceTree = "<group>"; };
 		3559827E189C99CC001A8E46 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		35598280189C99CC001A8E46 /* keepItCleanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = keepItCleanTests.m; sourceTree = "<group>"; };
-		41FFCD44189E136000293019 /* icon_512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_512x512.png; path = ../../icon_512x512.png; sourceTree = "<group>"; };
+		84C2CD0218A0267D00CAE98F /* icon_512x512@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_512x512@2x.png"; path = "Images.xcassets/AppIcon.appiconset/icon_512x512@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +129,7 @@
 		3559825D189C99CC001A8E46 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				41FFCD44189E136000293019 /* icon_512x512.png */,
+				84C2CD0218A0267D00CAE98F /* icon_512x512@2x.png */,
 				3559825E189C99CC001A8E46 /* keepItClean-Info.plist */,
 				3559825F189C99CC001A8E46 /* InfoPlist.strings */,
 				35598262189C99CC001A8E46 /* main.m */,
@@ -233,8 +233,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C2CD0318A0267D00CAE98F /* icon_512x512@2x.png in Resources */,
 				35598261189C99CC001A8E46 /* InfoPlist.strings in Resources */,
-				41FFCD45189E136000293019 /* icon_512x512.png in Resources */,
 				3559826F189C99CC001A8E46 /* Images.xcassets in Resources */,
 				35598267189C99CC001A8E46 /* Credits.rtf in Resources */,
 				3559826D189C99CC001A8E46 /* MainMenu.xib in Resources */,
