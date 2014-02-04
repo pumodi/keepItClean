@@ -7,33 +7,23 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MenubarController.h"
+#import "PanelController.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate> {
-    IBOutlet NSButton *btnSave;
-    IBOutlet NSButton *btnWipeManual;
-    IBOutlet NSButton *sunday;
-    IBOutlet NSButton *monday;
-    IBOutlet NSButton *tuesday;
-    IBOutlet NSButton *wednesday;
-    IBOutlet NSButton *thursday;
-    IBOutlet NSButton *friday;
-    IBOutlet NSButton * saturday;
-    IBOutlet NSButton *btnEnterPassword;
-    IBOutlet NSButton *btnSavePassword;
-    IBOutlet NSButton *btnLock;
-    IBOutlet NSDatePicker *datePickerTime;
-    IBOutlet NSPanel *panelPassword;
-    IBOutlet NSPanel *panelFirstPassword;
-    IBOutlet NSTextField *txtSecurePass;
-    IBOutlet NSTextField *txtFirstSecurePass;
-    IBOutlet NSMenuItem *changePassword;
-}
+
+@interface AppDelegate : NSObject <NSApplicationDelegate, PanelControllerDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (nonatomic, strong) MenubarController *menubarController;
+@property (nonatomic, strong, readonly) PanelController *panelController;
+@property (nonatomic) NSString *prefPassword;
+@property (nonatomic) BOOL prefNotFirstRun;
+@property (nonatomic) IBOutlet NSPanel *panelFirstPassword;
+@property (nonatomic) IBOutlet NSTextField *txtFirstSecurePass;
+@property (nonatomic) NSAlert *noPass;
+@property (nonatomic) NSAlert *firstPass;
+@property (nonatomic) NSAlert *notSaved;
 @property (nonatomic) NSUserDefaults *prefs;
-@property (strong) NSMutableArray *daysToWipe;
-@property (strong) NSDate *timeToWipe;
-@property (nonatomic) NSCalendar *calendar;
 @property (nonatomic) BOOL prefMon;
 @property (nonatomic) BOOL prefTues;
 @property (nonatomic) BOOL prefWed;
@@ -41,13 +31,8 @@
 @property (nonatomic) BOOL prefFri;
 @property (nonatomic) BOOL prefSat;
 @property (nonatomic) BOOL prefSun;
-@property (nonatomic) BOOL prefNotFirstRun;
-@property (nonatomic) NSString *prefPassword;
-@property (nonatomic) NSAlert *areYouSure;
-@property (nonatomic) NSAlert *notSaved;
-@property (nonatomic) NSAlert *firstPass;
-@property (nonatomic) NSAlert *noPass;
-@property (nonatomic) int tries;
+
+- (IBAction)togglePanel:(id)sender;
 
 
 @end
